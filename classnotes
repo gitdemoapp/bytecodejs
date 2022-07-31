@@ -1,0 +1,155 @@
+Java script:
+1.	Java script is a scripting language.
+2.	It is given by Netscape.
+3.	Current version of js is ES13 (Ecma script).
+4.	We can include js code in html by using <script></script>
+5.	It is used to develop angular , recat , viewjs based application
+6.	It provides dynamic functionalities to web pages
+7.	We can save java script file with .js extension.
+8.	Recommended IDE for JS is VS code.
+
+
+
+How many ways we can execute a javascript:
+1.	Interpreter  (Browser engine)
+2.	Node Tool present in Node js
+
+
+By default js execution is synchronous
+
+
+Netscape provides so many ready made objects like date , window , time , document , console and etc… 
+Thatswhy we can say it is a object based scripting language.
+
+
+Installations of software:
+1.	Download and install Node js
+
+Website :- https://nodejs.org/en/download/
+
+File - node-v16.15.1-x64.msi
+
+2.	download and VSCODE 
+website:- https://code.visualstudio.com/download
+file:- 
+
+
+Execution of javascript:
+
+Node  file.js
+
+(it will automatically execute filename.js file)
+
+
+Variables:
+
+Variables are used to store the data.
+
+Eg: 
+String
+Number
+Boolean
+
+……..
+
+How to declare variables:
+
+By three ways:
+
+1.	Var
+2.	Let
+3.	Const
+           
+                Identifier declaration should contains:
+       
+a)	 a – z
+A – Z
+0-	9
+_ underscore
+$ dollar
+Note : we can not start ant identifier (variables) with digits.
+Syntax:
+
+Var/let /const          variablename    =    value;
+
+Var   message  =  ”Good Evening Everyone”;
+
+String:-
+Sequence of characters within double quotes, single quotes and backtick.
+
+Double quotes=”javascript”
+Single quotes=’python’
+Backtick=`java`  added   ES6 V
+
+Var msg=”welcome to bytecode”;
+
+Var  instituteName=”bytecode it solutions”;
+
+Var wishMsg=`Good Evening !!! Welcome to  ${ instituteName }`;
+Console.log(wishMsg);
+
+Hexadecimal   0x
+Octal  0o
+Binary0b
+
+Boolean:
+
+True---1
+False ---0
+
+Bigint:
+Var any_number=21347632846873648763284588888888888888346344444444444444232222222222222222222222222222222222222222222222222222222222222222222222222222777777777777777777777777777777n;
+
+
+
+Array:
+We can represent an array with square bracket [].
+Var   array_one=[“java”, “python”, “php”];
+
+JSON:
+Javascript object notations.
+Used to transfer data over network.
+
+We can represent with { ‘key’:”values” , “key2”:”value2”} in the form key and values.
+
+Var object_one={“subject_one”: “ReactJS” , “sub_two”:”javascript”,”subject_three”: “Nodejs”};
+
+
+
+
+
+
+
+
+
+
+Functions:
+  Functions are used to define business logic and reuse that business logic.
+
+Types of functions:
+a)	Named functions
+b)	Anonymous functions
+c)	Rest parameters in functions
+d)	Default parameters in functions
+e)	Optional parameters in functions
+f)	Generators
+g)	Constructors
+h)	IIFE
+
+
+Named functions:
+The functions with a particular name called named functions.
+
+Syntax:
+
+function  functionName(parameters){
+
+      //  Business logic
+
+}
+
+Function calling:
+
+functionName(arg1,arg2,arg3…);
+
+
