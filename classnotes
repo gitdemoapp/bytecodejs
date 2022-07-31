@@ -153,3 +153,36 @@ Function calling:
 functionName(arg1,arg2,arg3…);
 
 
+
+b)	Anonymous functions:
+------------------------
+The function without name is called Anonymous functions.
+
+Anonymous functions also called as arrow function / lambda functions / callback functions.
+
+we can represent Anonymous function as =>.
+
+it is introduced in ES-6.
+
+syntax:
+  
+  function definition
+
+
+  var / let / const  variablename= (arg1,arg2,arg3.....)=>{
+
+       // business logic
+  }
+
+    function calling:
+
+    variablename(param1, param2,param3,....);
+
+
+   Note:- if we have only one statement of code then curly brackets and return statement is optional.
+
+   
+
+
+
+

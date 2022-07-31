@@ -1,0 +1,93 @@
+<!-- <script>
+
+    let fun_one=()=>{
+         console.log("This is anonymous function");
+    }
+    
+    fun_one();
+</script> 
+
+
+<script>
+
+    let fun_one=()=>{
+        return "This is anonymous function demo";
+    }
+    
+    console.log(fun_one());
+</script>
+
+
+
+<script>
+
+    let fun_one=()=>"This is anonymous function demo without return statement and curly bracktes";
+    console.log(fun_one());
+</script>
+
+
+
+
+<script>
+
+    let fun_one=(arg1,arg2,arg3)=>{
+        console.log(arg1,arg2,arg3);
+    };
+        fun_one("ReactJS","NodeJS","AngularJS");
+</script>
+
+if we are not passing any value to argument then we will get default value-undefined
+
+we can pass null value as param values.
+
+
+<script>
+
+    let fun_one=(arg1,arg2,arg3)=>{
+        console.log(arg1,arg2,arg3);
+    };
+        fun_one(null,null,null);
+</script>
+
+
+Note:-  if we missed () at the time of method caling then we will get method definition as output.
+
+
+<script>
+
+    let fun_one=()=>{
+        return "This is anonymous function demo";
+    }
+    
+    console.log(fun_one());
+</script>
+
+
+
+<script>
+
+    let fun_one=()=>{
+        return  ()=>{
+              return "Hi Raja";
+        };
+    };
+    
+    //console.log(fun_one);
+    //console.log(fun_one());
+
+    console.log(fun_one()());
+</script>
+
+
+
+<script>
+
+    let fun_one=(arg1,arg2,arg3)=>{
+         console.log(arg1(),arg2(),arg3());
+    }; 
+
+    fun_one(()=>{return "Raja"},()=>{return "Rani"},()=>{return "mantri"});
+</script>
+
+-->
+
