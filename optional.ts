@@ -33,3 +33,8 @@ function fun_one(fisrtname?:string,lastname?:string,middlename?:string){
 fun_one();
 
 //fun_one("raj");
+
+//npm install -g typescript
+//tsc filename.ts
+//tsc optional.ts
+//it will create a js file with name ==>filename.js  ==>optional.js
