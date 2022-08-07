@@ -1,0 +1,59 @@
+
+<!--
+ It controls flow of execution and we use "*"  as a prefix for generators.
+all statements within generator function prefix with "yield" keyword.
+
+ES-9
+
+it returns a cusrosr and using this cusrosr we can control flow of execution.
+
+
+
+<script>
+
+    function  *fun_one(){
+
+        yield "Hello Raja";
+        yield "Hello Rani";
+        yield "how are you?";
+        yield "hi rani ...I am good";
+
+    }
+
+     let cursor=fun_one();
+     console.log(cursor.next());
+     console.log(cursor.next());
+     console.log(cursor.next());
+     console.log(cursor.next());
+
+</script>
+
+
+
+<script>
+    function *fun_one(){
+          yield "Bytecode it solutions";
+    }
+
+    function *fun_two(){
+          yield "in kanpur";
+    }
+
+    function *fun_three(){
+
+           yield *fun_one();  
+           yield *fun_two();  
+           
+           yield "javascript";
+
+    }
+
+    let cursor=fun_three();
+
+    for(let i=0;i<=3-1;i++){
+        console.log(cursor.next());
+    }
+</script>
+
+
+-->
