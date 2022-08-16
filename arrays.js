@@ -230,15 +230,92 @@
 
 //foreach():
 
-["Hello","kayum","how are you"].forEach((e,i)=>{
-     console.log(e);
+// ["Hello","kayum","how are you"].forEach((e,i)=>{
+//      console.log(e);
 
-     console.log(i);
-})
+//      console.log(i);
+// })
 
 
+// let a1=[1,2,3];
+// let a2=["one","two","three"];
+
+// console.log(a1.map((e,i)=>{
+//      return [e,a2[i]];
+// }));
+// //[ [ 1, 'one' ], [ 2, 'two' ], [ 3, 'three' ] ]
+
+
+// let a1=[1,2,3];
+// let a2=["one","two","three"];
+
+// console.log(a1.map((e,i)=>{
+//      return [e,a2[i]];
+// }).flat(1));
+
+//[ 1, 'one', 2, 'two', 3, 'three' ]
+
+
+
+// let a1=[1,2,3,1,2,3];
+// console.log(a1.forEach((e,i)=>{
+//      console.log(a1.indexOf(e));
+// }));
+
+
+// console.log(a1.filter((e,i)=>{
+//      return a1.indexOf(e)==i;
+   
+//    }));
+
+
+   //copyWithin():
+
+//    let a1=[10,20,30,40,50,60,70,80,90,100];
+
+//    a1.copyWithin(4);
+
+//    console.log(a1);
    
 
+//fill():--
+
+
+// let a1=[10,20,30,40,50,60,70,80,90,100];
+
+// a1.fill(100);
+
+// console.log(a1);
+
+
+// let a1=[10,20,30,40,50,60,70,80,90,100];
+
+// a1.fill(100,-8);
+
+// console.log(a1);
+
+
+//some():--
+
+// console.log([10,20,30,40,50,60,70,80,90,100].some((e,i)=>{
+//      return e>=800;
+// }));
+
+
+//every():-
+
+// console.log([10,20,30,40,50,60,70,80,90,100].every((e,i)=>{
+//      return e>=10;
+// }));
+
+
+//console.log(["java","javascript","python"].includes("java"));
+
+
+//find():
+// console.log([1,2,3,4,5].find((e,i)=>{
+//      return e==6;
+// }));
 
 
 
