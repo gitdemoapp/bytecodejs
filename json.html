@@ -39,15 +39,113 @@ Key and value seprated by ",".
 // console.log(obj[101],obj[102],obj[103]);
 
 
-let obj={
+// let obj={
 
-        "subject1":"Angularjs",
-        "subject2":"ReactJS",
-        "subject3":"javascript"
-    };
+//         "subject1":"Angularjs",
+//         "subject1":"Angularjs-1",
+//         "subject3":"javascript"
+//     };
 
-    console.log(obj["subject1"],obj["subject2"],obj["subject3"]);
+   // console.log(obj["subject1"],obj["subject2"],obj["subject3"]);
 
 
-console.log(typeof obj);
- </script>
+    //  for (let key in obj) {
+    //          console.log(key);
+
+    //          console.log(typeof key);
+
+    //          console.log(obj[key]);
+    //  }
+
+//     console.log(Object.keys(obj));
+
+//     console.log(Object.values(obj));
+
+/*  
+
+  how to convert object into string in js:
+  --------------------------------------
+
+*/
+
+// let obj={"key1":"Hello"};
+
+// console.log(typeof obj);//object
+
+// let s=JSON.stringify(obj);
+
+// console.log(typeof s);
+
+
+/*  
+
+  how to convert String into object in js:
+  --------------------------------------
+
+*/
+//   let obj1=JSON.parse(s);
+
+//   console.log(typeof obj1);
+
+
+  
+/*  
+
+  to perform concatenation  in json:
+  --------------------------------------
+
+*/
+
+
+// let obj1={"rollNumber-1":101};
+
+// let obj2={"rollNumber-2":102};
+
+// let obj3={"rollNumber-3":103};
+
+// let obj4={...obj1,...obj2,...obj3};
+
+// console.log(obj4);
+
+
+// let obj1={"rno1":101,"rno2":102,"rno3":103,"rno4":104};
+
+// console.log(obj1);
+
+// delete obj1.rno1;//deletion
+
+// console.log(obj1);
+
+// obj1.rno2=120;//update
+
+// console.log(obj1);
+
+// Object.defineProperties(object1, {
+//   property1: {
+//     value: 42,
+//     writable: true
+//   },
+//   property2: {}
+// });
+
+// Object.defineProperties(obj1,{"key1":{value:101,writable:true}});
+
+// obj1.key1=20000;
+
+// console.log(obj1);
+
+
+let obj1={"A":101};
+
+let obj2={"B":102};
+
+let obj3={"C":103};
+
+
+console.log(Object.assign(obj1,obj2,obj3));
+
+
+</script>
+
+
+
