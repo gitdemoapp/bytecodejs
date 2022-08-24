@@ -1,0 +1,51 @@
+<script>
+
+   let arrOfProd=[
+       
+   {"pid":101,"pname":"Iphone","pcost":70000,"brand":"Apple"},
+   {"pid":102,"pname":"Nokia-123","pcost":10000,"brand":"Nokia"},
+   {"pid":103,"pname":"Samsung-123","pcost":20000,"brand":"Samsung"},
+   {"pid":104,"pname":"MI-123","pcost":30000,"brand":"MI"},
+   {"pid":105,"pname":"ASUS-123","pcost":50000,"brand":"ASUS"}
+
+   ];
+
+   document.write(
+        ` <table>
+
+            <tr>
+                <th>SNO</th>
+                <th>product_id</th>
+                <th>product_name</th>
+                <th>product_cost</th>
+                <th>product_brand</th>
+                
+            </tr>`
+
+            );
+
+            arrOfProd.forEach((elememt,index)=>{
+
+                document.write(
+        
+
+           ` <tr>
+                <td>${index+1}</td>
+                <td>${elememt.pid}</td>
+                <td>${elememt.pname}</td>
+                <td>${elememt.pcost}</td>
+                <td>${elememt.brand}</td>
+                
+            </tr>`
+
+            );
+                  
+            });
+
+            
+
+          
+           
+        document.write(`</table>`);
+  
+</script>
