@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+
+            <script>
+                $.ajax(
+                     {
+                        method:"GET",
+                        url: "http://localhost:3000/employee",
+                        success:(postiveResponse)=>{
+                            console.log(postiveResponse);
+                        },
+                        error:(errorMessage)=>{
+                            console.log(errorMessage)
+                        }
+                     }
+                )
+            </script>
+
+    </body>
+</html>
