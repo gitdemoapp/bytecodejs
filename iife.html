@@ -1,0 +1,127 @@
+<!-- 
+
+    IIFE:  
+    immediate invokable functional expression  
+    ES-9
+    When we create function automatically it will be executed.
+
+
+    syntax:
+
+   ((arg1,arg2,arg3...)=>{
+
+        business logic 
+    })(param1,param2,param3...)
+
+
+
+ <script>
+(()=>{
+   console.log("This is IIFE");
+})()
+
+ </script>
+
+ 
+
+
+  <script>
+    ((arg1,arg2,arg3)=>{
+       console.log("This is IIFE");
+
+       console.log(arg1,arg2,arg3);
+       
+    })("raj","armesh","suresh")
+    
+     </script>
+
+      
+
+
+      <script>
+        ((arg1,arg2,arg3)=>{
+           console.log("This is IIFE");
+    
+           console.log(arg1,arg2,arg3);
+           
+        })("raj")
+        
+         </script>
+
+        
+
+         <script>
+            ((arg1,arg2="Hello",arg3="Hii")=>{
+               console.log("This is IIFE");
+        
+               console.log(arg1);
+               console.log(arg2);
+               console.log(arg3);
+               
+            })("raj")
+            
+             </script>
+
+              
+
+              <script>
+                ((arg1,arg2="Hello",arg3="Hii")=>{
+                   console.log("This is IIFE");
+            
+                   console.log(arg1 , "\n",arg2 ," \n",arg3);
+                  
+                   
+                })("raj")
+                
+                 </script>
+
+                
+
+
+                 <script>
+                  let x = (()=>{
+                       
+                     return "This is return value from IIFE";
+                       
+                    })()
+
+                    console.log(x);
+                    
+                     </script>
+
+                     
+
+
+
+                      <script>
+
+                        ((arg1,arg2,arg3)=>{
+                              console.log(arg1,arg2,arg3);
+                        })  (
+                        
+                        (()=>
+                        {
+                            return "hello_1";
+                        } )(), 
+
+                        
+                        (()=>
+                        {
+                            return "hello_2";
+                        } )(), 
+
+                      
+                        ( ()=>
+                        {
+                            return "hello_3";
+                        } )()
+                        
+                        
+                        );
+                      </script>
+
+                       -->
+
+
+                    
+    

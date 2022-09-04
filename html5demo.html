@@ -1,0 +1,121 @@
+
+
+<!-- 
+
+    HTML:  Hyper text markup language
+
+           to develop static webpages
+
+           current vesrion is HTML-5
+
+           Why its so popular?
+
+           becuase it supports api's.
+
+           for eg: google maps api.
+
+           web socket api  [networking]
+
+           Web wokrer api
+
+           supports storage [local storage , session storage]
+
+
+           In html5 we have some meaningful tag or schematic elements-
+
+           eg:
+
+           header 
+           footer
+           aside
+           main
+           audio
+           video
+           nav
+
+           .....etc
+
+           web sql 
+           web socket  (networking apps)
+           Web worker (Multi-thredaing apps)
+           Anumations and graphics....
+
+           Schemantic elements-
+
+           Html-5 provides some more meaningful tags , these meaningful tags are called as schemantic elements.
+        <header ></ header >
+           footer
+           aside
+           main
+           audio
+           video
+           nav
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   
+    <title>Schemantic elements</title>
+
+    <style>
+
+        section{
+            display: grid;
+            grid-template-areas:    "header"
+                                    "main"
+                                    "footer";
+            height: 100vh;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 6fr 1fr;
+           
+        }
+
+        header{
+            grid-area: "header";
+            background-color: brown;
+            color: white;
+            text-align: center;
+           
+        }
+
+        main{
+            grid-area: "main";
+            background-color: aqua;
+            color: white;
+            text-align: center;
+        }
+
+        footer{
+            grid-area: "footer";
+            background-color: bisque;
+            color: white;
+            text-align: center;
+        }
+    </style>
+ </head>
+
+ <body>
+    
+     <section>
+
+        <header>
+                 Bytecode IT Solutions
+        </header>
+
+        <main>
+
+              Uploading main soon!!!
+        </main>
+
+        <footer>
+
+             copyright@bytecode.co.in
+        </footer>
+
+    </section>
+ </body>
+ </html>
+
+

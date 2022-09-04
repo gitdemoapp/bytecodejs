@@ -1,0 +1,84 @@
+<!-- 
+
+    Html-5 supports 2 types of storage.
+
+    1. local storage:
+    ==================
+
+    if we close the browser or tab then data woould not be lost.
+
+    2. session storage:
+    ===================
+
+     if we close the browser or tab then data will be lost.
+   
+      
+     We have some object to handle storage but these objects are given by javascript.
+
+     a) localStorage:- if we want to work with local storage .
+
+     b) sessionStorage:- it is given to handle session storage.
+
+     To handle the session storage and local storage , we have some function with javascript given object.
+
+     setItem():
+
+     used to store the data.
+
+     getItem():-
+
+     read / get the data from storage
+
+     removeItem():-  to delte the record
+
+
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Storage Api</title>
+
+    <style>
+        fieldset{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    
+    <fieldset>
+        <legend>
+            Login
+        </legend>
+
+        <label>Username</label>
+        <input type="text"  id="uid"><br>
+        <label>password</label>
+        <input type="password"  id="pwd"><br>
+
+        <button onclick="myFun()">Login</button>
+
+    </fieldset>
+     
+    <script>
+        function myFun(){
+
+            let obj={
+                "uname":document.getElementById("uid").value,
+                "upass":document.getElementById("pwd").value
+            };
+
+            // window.localStorage.setItem("Login Details",JSON.stringify(obj));
+
+            // console.log(window.localStorage.getItem("Login Details"))
+
+            // window.localStorage.removeItem("Login Details");
+
+            window.sessionStorage.setItem("Login_details",JSON.stringify(obj))
+        }
+    </script>
+
+</body>
+</html>
