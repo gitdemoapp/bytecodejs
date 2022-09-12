@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Webworker</title>
+</head>
+<body>
+    
+    <script>
+        if(window.Worker){
+          let  additionThread= new Worker("addition.js");
+
+          let  subThread= new Worker("sub.js");
+
+          additionThread.postMessage({"num1":100,"num2":200});
+          additionThread.onmessage= function(e){
+                  subThread.postMessage({num1:e.data,num2:200})
+
+                  subThread.onmessage=function(x){
+                    console.log(x.data);
+                  }
+           }
+        }
+
+        else{
+            console.log("Web browser is not supporting");
+        }
+    </script>
+</body>
+</html>

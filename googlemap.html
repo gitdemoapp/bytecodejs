@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Google Maps</title>
+</head>
+
+<body>
+    
+  <p id="my_paragraph"></p>
+
+  <br>
+  <br>
+
+  <button onclick="myFun()"> Click me</button>
+
+  <script>
+
+    function myFun(){
+           if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(function fun_one(res){
+                document.getElementById("my_paragraph").innerHTML=`Longitute........ ${res.coords.longitude}  Latitude... ${res.coords.latitude}`
+            },function fun_two(err){
+                console.log(err);
+            })
+           }
+           else{
+            console.log("Browser not supporting");
+           }
+    }
+    
+  </script>
+</body>
+</html>

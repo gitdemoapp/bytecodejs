@@ -1,0 +1,58 @@
+<!-- 
+
+    Cookie stores data in the form of key and value.
+    Cookies are not safe.
+
+
+    document.cookie="kay=value"
+
+    it is used to store the cookie.
+
+    document.cookie  by using this we can read the cookie value.
+
+    we dont have any direct method to delete the cookie but we can specify expiry time
+    for cookie.
+
+    once that expiry time will complete , automatically that cookie will be deleted.
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   
+    <title>Cookies</title>
+ </head>
+ <body>
+    
+    <button onclick="fun_one()">
+
+        set cookie
+
+    </button>
+
+
+    <button onclick="fun_two()">
+
+        get cookie
+
+    </button>
+
+    <script>
+        function fun_one(){
+            var date = new Date();
+            var time = date.getTime();
+             var expireTime = time + 30000; //30sec
+              date.setTime(expireTime);
+            
+            document.cookie="key2=Rani" ; expires =date.toUTCString()
+            
+        }
+
+        function fun_two(){
+           console.log(document.cookie) ;
+        }
+    </script>
+ </body>
+ </html>
