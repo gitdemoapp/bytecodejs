@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Client App</title>
+</head>
+<body>
+
+    <div id="my_div">
+
+    </div>
+
+    <script>
+
+       let socket= new WebSocket("ws://localhost:8085");
+       socket.onopen=function(){
+        socket.send("welcome to server");
+       }
+
+       socket.onmessage=function(msg){
+        document.getElementById("my_div").innerHTML+=msg.data   +"<br>";
+       }
+       socket.onerror=function(err){
+        console.log(err);
+       }
+    </script>
+    
+</body>
+</html>
